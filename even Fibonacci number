@@ -1,0 +1,14 @@
+def fab(n):
+  temp=0
+  sum=0
+  v1=1
+  v2=2
+  while(v2<n):
+    if(v2%2==0):
+      sum=sum+v2
+    temp=v1
+    v1=v2
+    v2+=temp
+  return sum
+n=int(input("enter a number"))
+print("sum of even fibonacci numbers is",fab(n))
